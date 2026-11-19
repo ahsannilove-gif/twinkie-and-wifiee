@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>For Tanisha 💌</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,400&family=Caveat:wght@500;700&display=swap">
+<style>
+:root{
+  --bg:#fff0f2; --ink:#3b1a2e; --soft:#8a5a6e; --rose:#e0476f; --card:#ffffff; --line:#f3c6d2;
+  box-sizing:border-box;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#26101f; --ink:#ffe9ee; --soft:#d9a4b6; --rose:#ff7a9c; --card:#3a1a2e; --line:#5c2a45;}
+}
+:root[data-theme="dark"]{--bg:#26101f; --ink:#ffe9ee; --soft:#d9a4b6; --rose:#ff7a9c; --card:#3a1a2e; --line:#5c2a45;}
+html{scroll-padding-top:70px;scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Fraunces",Georgia,serif;line-height:1.6;overflow-x:hidden}
+section{max-width:34rem;margin:0 auto;padding:4.5rem 1.4rem}
+
+/* NAV */
+.topnav{position:sticky;top:0;z-index:40;backdrop-filter:blur(12px);background:color-mix(in srgb,var(--bg) 82%,transparent);border-bottom:1px solid var(--line)}
+.topnav .inner{max-width:34rem;margin:0 auto;padding:.85rem 1.4rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.topnav .brand{font-family:"Caveat",cursive;font-size:1.5rem;color:var(--rose);font-weight:700}
+.topnav .links{display:flex;gap:1rem;font-size:.85rem}
+.topnav .links a{color:var(--soft);text-decoration:none;transition:color .2s}
+.topnav .links a:hover{color:var(--rose)}
+@media(max-width:520px){.topnav .links{display:none}}
+
+/* HERO */
+.hero{min-height:88vh;display:flex;flex-direction:column;justify-content:center;text-align:center;position:relative}
+.script{font-family:"Caveat","Segoe Script",cursive;color:var(--rose);font-size:1.7rem;margin:0}
+h1{font-weight:600;font-size:clamp(2.8rem,13vw,4.6rem);line-height:1.05;margin:.3rem 0 1.2rem}
+.lead{color:var(--soft);font-style:italic;font-size:1.15rem;margin:0 auto 2rem;max-width:26rem}
+.btn{font:inherit;border:0;border-radius:99px;padding:.9rem 1.8rem;background:var(--rose);color:#fff;font-size:1.05rem;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px -10px var(--rose)}
+.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.scroll-hint{margin-top:2.5rem;color:var(--soft);font-size:.85rem;opacity:.7;animation:bob 2s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+
+h2{font-weight:600;font-size:1.9rem;margin:0 0 .4rem}
+.hint{color:var(--soft);margin:0 0 1.6rem}
+
+/* REASONS */
+.reasons{display:grid;gap:.8rem}
+.reason{font:inherit;text-align:left;width:100%;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:18px;padding:1.1rem 1.2rem;cursor:pointer;min-height:4.2rem;transition:border-color .2s,transform .2s}
+.reason:hover{transform:translateY(-1px)}
+.reason:focus-visible{outline:3px solid var(--rose)}
+.reason .t{color:var(--soft);font-style:italic}
+.reason .x{display:none}
+.reason.open .t{display:none}
+.reason.open .x{display:block}
+.reason.open{border-color:var(--rose);background:color-mix(in srgb,var(--rose) 6%,var(--card))}
+
+/* LETTER */
+.letter h2{font-size:1.6rem;margin-top:2rem}
+.letter p{font-size:1.1rem}
+.letter .script{margin-bottom:.5rem}
+.pull{border-left:3px solid var(--rose);padding-left:1rem;font-style:italic;color:var(--soft);margin:1.5rem 0}
+
+/* GALLERY / MOMENTS */
+.moments{display:grid;grid-template-columns:repeat(2,1fr);gap:.9rem;margin-top:1rem}
+.moment{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.2rem;font-size:.95rem}
+.moment .emoji{font-size:1.6rem;display:block;margin-bottom:.4rem}
+.moment b{display:block;margin-bottom:.2rem}
+.moment span{color:var(--soft);font-size:.88rem}
+
+/* MONTH */
+.month{text-align:center}
+.big{font-size:7rem;font-weight:600;color:var(--rose);line-height:1}
+.month ul{list-style:none;padding:0;margin:0;text-align:left}
+.month li{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:1rem 1.2rem;margin-bottom:.7rem}
+.month li::before{content:"💗 "}
+
+/* COUNTER */
+.counter{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin:1.5rem 0}
+.counter .unit{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1rem 1.2rem;min-width:5rem;text-align:center}
+.counter .num{font-size:1.8rem;font-weight:600;color:var(--rose);line-height:1}
+.counter .lbl{font-size:.72rem;color:var(--soft);text-transform:uppercase;letter-spacing:.08em;margin-top:.3rem}
+
+/* ANSWER */
+.answer{text-align:center;position:relative}
+.answer h2{font-size:2.4rem}
+.sig{font-family:"Caveat",cursive;font-size:2rem;color:var(--rose);margin-top:2rem}
+
+/* FOOTER */
+footer{text-align:center;padding:2rem 1.4rem 4rem;color:var(--soft);font-size:.85rem}
+footer .script{font-size:1.4rem}
+
+/* HEARTS */
+.heart{position:fixed;top:-2rem;pointer-events:none;z-index:9;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(112vh) rotate(40deg);opacity:.2}}
+@media (prefers-reduced-motion:reduce){.heart{display:none}.scroll-hint{animation:none}}
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="inner">
+    <span class="brand">T &amp; N 💌</span>
+    <div class="links">
+      <a href="#why">Why</a>
+      <a href="#letter">Letter</a>
+      <a href="#moments">Moments</a>
+      <a href="#month">One month</a>
+      <a href="#answer">Love</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <p class="script">happy 1 month anniversary to</p>
+  <h1 id="her">my love</h1>
+  <p class="lead">I made you a tiny corner of the internet, just because you are my favorite person.</p>
+  <div><button class="btn" id="start">Open it</button></div>
+  <p class="scroll-hint">scroll gently ↓</p>
+</section>
+
+<section id="why">
+  <h2>Why I love you</h2>
+  <p class="hint">Tap each one.</p>
+  <div class="reasons" id="reasons"></div>
+</section>
+
+<section class="letter" id="letter">
+  <p class="script">things I think about you</p>
+  <h2>Your face</h2>
+  <p>It’s my favorite place to look. I could memorize every part of it and still find something new to fall for each time.</p>
+  <h2>Your smile</h2>
+  <p>That big, teethy smile that shows up all at once and takes over your whole face. It’s the happiest thing I know, and it makes everything else go quiet.</p>
+  <h2>Your eyes</h2>
+  <p>Sun-kissed and caramelized. I get lost in them every single time you look at me.</p>
+  <p class="pull">“Even from far away, you are the closest thing to home.”</p>
+  <h2>Even from far away</h2>
+  <p>The kilometers between us are hard, and I miss you more than I can say. But distance has never made me love you any less. Every call, every message, every day closer to being with you is worth it.</p>
+  <h2>Everything else</h2>
+  <p>Your laugh, the little things you do without noticing, the way you are completely and perfectly you. I love all of it.</p>
+</section>
+
+<section id="moments">
+  <h2>Little moments I keep</h2>
+  <p class="hint">The small things that became my favorites.</p>
+  <div class="moments">
+    <div class="moment"><span class="emoji">🌙</span><b>Late-night calls</b><span>When neither of us wants to hang up first.</span></div>
+    <div class="moment"><span class="emoji">☕</span><b>Good-morning texts</b><span>The first thing I look for when I wake up.</span></div>
+    <div class="moment"><span class="emoji">😂</span><b>Your laugh</b><span>The sound I replay in my head all day.</span></div>
+    <div class="moment"><span class="emoji">📸</span><b>Every photo</b><span>I keep them all. Every single one.</span></div>
+  </div>
+</section>
+
+<section class="month" id="month">
+  <div class="big">1</div>
+  <p class="script">month with you</p>
+  <h2>Today we turned one month</h2>
+  <p>It may only be a month, but you have already become my favorite part of every single day. Even from far away, you made falling for you feel so easy.</p>
+
+  <div class="counter" id="counter" aria-label="Time together">
+    <div class="unit"><div class="num" id="c-d">0</div><div class="lbl">Days</div></div>
+    <div class="unit"><div class="num" id="c-h">0</div><div class="lbl">Hours</div></div>
+    <div class="unit"><div class="num" id="c-m">0</div><div class="lbl">Mins</div></div>
+    <div class="unit"><div class="num" id="c-s">0</div><div class="lbl">Secs</div></div>
+  </div>
+
+  <p class="hint">My promises to you</p>
+  <ul>
+    <li>To always be honest with you, even when it’s hard.</li>
+    <li>To make time for you, no matter how far apart we are.</li>
+    <li>To cheer you on in everything you do.</li>
+    <li>To keep counting the days until I can hold you.</li>
+  </ul>
+</section>
+
+<section class="answer" id="answer">
+  <p class="script">and the most important part</p>
+  <h2>I love you.</h2>
+  <p class="lead">And I’ll always be right here, beside you, no matter how many kilometers are between us.</p>
+  <div class="sig" id="sig"></div>
+</section>
+
+<footer>
+  <p class="script">made with love, just for you</p>
+  <p>— a tiny corner of the internet 💗</p>
+</footer>
+
+<script>
+// ✏️ EDIT THESE: make it yours
+var CONFIG = {
+  her: "Tanisha",
+  from: "Neel",
+  // The day you two became official (YYYY, MM-1, DD, HH, MM) — month is 0-indexed
+  since: [2025, 9, 20, 20, 0],
+  reasons: [
+    ["Your smile", "That big, teethy smile fixes my worst days in about two seconds."],
+    ["Your eyes", "Sun-kissed and caramelized. I could stare into them all day."],
+    ["Your face", "The most beautiful thing I get to look at."],
+    ["The way you laugh", "It’s my favorite sound in the whole world."],
+    ["Being with you", "Even ordinary days feel like an adventure when you’re next to me."],
+    ["Just you", "Exactly as you are. I wouldn’t change a thing."]
+  ]
+};
+
+var $ = function(id){return document.getElementById(id)};
+$("her").textContent = CONFIG.her;
+$("sig").textContent = "Yours, " + CONFIG.from + " 💌";
+document.title = "For " + CONFIG.her + " 💌";
+
+// Build reason cards
+CONFIG.reasons.forEach(function(r){
+  var b = document.createElement("button");
+  b.className = "reason";
+  b.innerHTML = "<span class='t'>" + r[0] + "</span><span class='x'>" + r[1] + "</span>";
+  b.onclick = function(){ b.classList.toggle("open"); hearts(6); };
+  $("reasons").appendChild(b);
+});
+
+// "Open it" button
+$("start").onclick = function(){ $("why").scrollIntoView({behavior:"smooth"}); hearts(14); };
+
+// Live counter since the anniversary
+function tick(){
+  var start = new Date(CONFIG.since[0], CONFIG.since[1], CONFIG.since[2], CONFIG.since[3], CONFIG.since[4]);
+  var diff = Math.max(0, Date.now() - start.getTime());
+  var s = Math.floor(diff/1000);
+  var d = Math.floor(s/86400); s -= d*86400;
+  var h = Math.floor(s/3600);  s -= h*3600;
+  var m = Math.floor(s/60);    s -= m*60;
+  $("c-d").textContent = d;
+  $("c-h").textContent = String(h).padStart(2,"0");
+  $("c-m").textContent = String(m).padStart(2,"0");
+  $("c-s").textContent = String(s).padStart(2,"0");
+}
+tick(); setInterval(tick, 1000);
+
+// Hearts
+function hearts(n){
+  var set = ["💗","💖","💕","🌹","💘"];
+  for(var i=0;i<n;i++){
+    var h = document.createElement("div");
+    h.className = "heart";
+    h.textContent = set[Math.floor(Math.random()*set.length)];
+    h.style.left = Math.random()*100 + "vw";
+    h.style.fontSize = (1+Math.random()*1.5) + "rem";
+    h.style.animationDuration = (3+Math.random()*3) + "s";
+    h.style.animationDelay = (Math.random()*1.2) + "s";
+    document.body.appendChild(h);
+    setTimeout(function(el){return function(){el.remove()}}(h), 8000);
+  }
+}
+
+// Big burst when the final love section is reached
+if("IntersectionObserver" in window){
+  var seen = false;
+  new IntersectionObserver(function(en){
+    if(en[0].isIntersecting && !seen){ seen = true; hearts(40); }
+  },{threshold:0.6}).observe($("answer"));
+}
+$("answer").onclick = function(){ hearts(20); };
+</script>
+</body>
+</html>
